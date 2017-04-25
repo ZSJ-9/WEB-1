@@ -10,10 +10,7 @@ li{
 }
 a{
 	font:12px 'Arial';
-	color: grey;
 	line-height: 2em;
-}
-a:link{
 	text-decoration:none;
 	color: #727272;
 }
@@ -36,8 +33,9 @@ td{
 .spe2{
 	color: #fdb306;
 }
+
 .spe1{
-	font-weight: border;
+	font-weight: bold;
 	font-size: 14px;
-	color:white;
+	color:#fff;
 }
