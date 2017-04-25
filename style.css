@@ -1,0 +1,43 @@
+title{
+	font:12px 'Arial';
+	color: gray;
+	line-height: 2em;
+}
+li{
+	font:12px 'Arial';
+	color: gray;
+	line-height: 2em;
+}
+a{
+	font:12px 'Arial';
+	color: grey;
+	line-height: 2em;
+}
+a:link{
+	text-decoration:none;
+	color: #727272;
+}
+a:visited{
+	text-decoration: 
+}
+a:hover{
+	text-decoration:none;
+	color:#b9f605;
+}
+a:active{
+	text-decoration:underline;
+}
+td{
+	font:12px 'Arial';
+	color: gray;
+	line-height: 2em;
+}
+
+.spe2{
+	color: #fdb306;
+}
+.spe1{
+	font-weight: border;
+	font-size: 14px;
+	color:white;
+}
