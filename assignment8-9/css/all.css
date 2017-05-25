@@ -1,0 +1,25 @@
+*{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	border:0px;
+	font-family: '宋体'；
+}
+li{
+	list-style: none;
+}
+body{
+	font-size: 12px;
+	background-image: url(images/bodybg.gif);
+	background-repeat: repeat-x;
+}
+.top{
+	background-image: url(images/bg.gif);
+	background-position:top;
+	height: 160px;
+	width: 1260px;
+	margin: 0px;
+			
+}
