@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculate</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="calculation.js">
+		
+	</script>
+	<style type="text/css">
+		td{
+			width: 50px;
+			height: 70px;
+		}
+	</style>
+</head>
+<body>
+
+<table border="1">
+	<tr>
+		<td colspan="3" id="result">0</td>
+		<td><button type="button" value="c" onclick="clearData()">c</button></td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" name="1" id="1" value="1" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="2" id="2" value="2" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="3" id="3" value="3" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="+" id="+" value="+" onclick="getNum(this)">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" name="4" id="4" value="4" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="5" id="5" value="5" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="6" id="6" value="6" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="-" id="-" value="-" onclick="getNum(this)">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" name="7" id="7" value="7" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="8" id="8" value="8" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="9" id="9" value="9" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="×" id="×" value="×" onclick="getNum(this)">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" name="0" id="0" value="0" onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="." id="." value="." onclick="getNum(this)">
+		</td>
+		<td>
+			<input type="button" name="=" id="=" value="=" onclick="calculate()">
+		</td>
+		<td>
+			<input type="button" name="/" id="/" value="/" onclick="getNum(this)">
+		</td>
+	</tr>
+</table>
+</body>
+</html>
