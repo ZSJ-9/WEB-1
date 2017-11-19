@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>商品评分</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		p{
+			background-image: url(images/bg.jpg);
+			background-repeat: repeat-x;
+		}
+	</style>
+
+	<script type="text/javascript">		
+		var arr = new Array('E','D','C','B','A');
+		var con=false;
+		var a0="images/star0.png";
+		var a1="images/star1.png";
+		var a2="images/star2.png";
+		function starPic(which){
+			var n = 0;
+			for(n=0;n<which;n++){
+				if(which<=2){                              //鼠标滑动改变星星颜色
+					document.images[n].src=a1;
+				}
+				else{
+					document.images[n].src=a2;
+				}
+			}
+			document.getElementById("text").value=arr[n-1];//将文本域值为对应字符
+		}
+		function hide(i){
+			if(con == true)
+				return true;
+			else{
+				for(n=0;n<i;n++){
+					document.images[n].src=a0;         //鼠标滑动位置之前的星星都编程初识灰色
+				}
+			document.getElementById("text").value=" ";//将文本域值为空
+			}
+		}
+		function qd(){
+			con=true;
+			for(var n=0;n<5;n++){
+				document.images[n].onmouseover="";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p>宝贝与描述相符(打分匿名)</p>
+	</div>		
+	<div>
+		<a href="#"><img src="images/star0.png" value="1" onmouseover="starPic(1);" onmouseout="hide(1);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="2" onmouseover="starPic(2);" onmouseout="hide(2);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="3" onmouseover="starPic(3);" onmouseout="hide(3);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="4" onmouseover="starPic(4);" onmouseout="hide(4);" onclick="qd();"></a>
+		<a href="#"><img src="images/star0.png" value="5" onmouseover="starPic(5);" onmouseout="hide(5);" onclick="qd();"></a>
+	</div>	
+	<div>
+		<textarea rows="50" cols="80" id="text"></textarea>
+	</div>
+	<div>
+		<select name="type">
+			<option value="public">公开评论</option>
+			<option value="private">私有评论</option>
+		</select>
+	</div>
+</body>
+</html>
