@@ -1,0 +1,87 @@
+body{
+	background-attachment:fixed;
+}
+.logo{
+	margin-left: 160px;
+	width: 500px;
+	float: left;
+}
+.logoleft{
+	height: 20px;
+	float: left;
+	margin-top: 105px;
+	margin-left: 125px;
+}
+.daohang{
+	float: left;
+	width: 1255px;
+	padding-left: 0px;
+	border-right: 180px;
+	margin-top: 0px;
+	padding-top: 0px;
+	border-top: 0px;
+}
+ul{
+	list-style-type: none;
+	background-color: #FFE4B5;
+	padding:0px;
+	display: inline-block;
+	margin-top: 0px;
+	width: 1255px;
+}
+.daohang li{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+a{
+	color: #D2691E;
+	text-decoration-line: none;
+	padding: 5px;
+}
+a:hover{
+	color: red;
+	background-color:#F5DEB3;
+	text-decoration-line: none;
+}
+.middle{
+	float: left;
+	margin-left: 160px;
+}
+.m1{
+	float: left;
+	margin-bottom: 20px;
+}
+.biaoti{
+	width: 300px;
+	background-image: url(images/logo1.jpg);
+	background-repeat: no-repeat;
+	color: #D2691E;
+	opacity: 0.8;
+}
+.neirong{
+	width: 300px;
+	color: #D2691E;
+	list-style-image: url(images/next1.png);
+	opacity: 0.9;
+	background-repeat: no-repeat;
+}
+ol{
+	list-style-type:none;
+}
+.banner{
+	float: left;
+	margin-left: 150px;
+	width: 940px;
+	height: 200px;
+	background-image: url(images/banner3.jpg);
+	background-repeat: no-repeat;
+}
+.foot{
+	margin-left: 200px;
+	float: left;
+	width: 830px;
+	background-image: url(images/foot_bg.gif);
+	background-repeat: repeat-x;
+	color: red;
+}

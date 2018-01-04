@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my basketball net-list</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="BASKETBALL-all.css">
+	<style type="text/css">		
+		.mianbaoxie{
+			margin-left: 160px;
+			float: left;
+			width: 1100px;
+			height: 20px;
+			background-image: url(images/11.png);
+			opacity: 0.8;
+		}
+		.mianbaoxie1{
+			background-image: url(images/11.png);
+		}
+		.left{
+			margin-left: 160px;
+			width: 250px;
+			float: left;
+			position: ;
+			top:190px;
+		}
+		.ltitle{
+			margin-top: 5px;
+			float: left;
+			width: 250px;
+			height: 40px;
+			background-image: url(images/6.png);
+			text-align: center;
+		}
+		.ltext{
+			float: left;
+			background-image: url(images/11.png);
+			width: 250px;
+			opacity: 0.9;
+		}
+		.right{
+			margin-top: 5px;
+			margin-right: 160px;
+			float: right;
+			width: 670px;
+		}
+		.rtext{
+			float: left;			
+		}
+		.text{
+			width: 400px;
+			height: 50px;
+			display: inline;
+		}
+		ol{
+			padding-left: 15px;
+			margin-bottom: 5px;
+		}
+		li{
+			padding-bottom: 5px;
+		}
+		h2{
+			margin: 0px;
+			color: #4D4D4D;
+		}
+
+		#nav li ul{
+			display:none;
+		}
+		#nav li.subMenuShow ul{
+			display:block;
+		}
+
+		div#loadbar{
+			width:250px;
+			background-color: silver;
+			border:1px solid salmon;
+			text-align: center; 
+			border-radius:8px ;
+		}
+		#bar{
+			display: block;  
+            font-family: arial;  
+            font-size: 12px;  
+            background-color: sandybrown;  
+            text-align: center;  
+            padding: 5px;  
+            border-radius:5px ;  
+		}
+
+		#div1{
+		display: none;
+		position: absolute;
+		left:50%;
+		top:50%;
+		width:250px;
+		height:150px;
+		background-color: silver;
+		text-align: center;
+		}
+		#open{
+		top:50%;
+		left:50%;
+		width:100px;
+		height:50px;
+		}
+	</style>
+	<script type="text/javascript">
+
+		window.onload=function(){
+			alert('右上角登录获取更多精彩内容哦~');
+			var username = document.getElementById("username");
+			username.onblur = checkUsername;
+		}
+		function checkUsername(){
+			var username = document.getElementById('username');
+			if(username.value.length == 0){
+				alert('登录时用户名务必输入呀');
+			}
+		}
+
+		var i = 0;
+		function startbar(){
+			var showbar=setInterval("setbar()",1000);
+		}
+		function setbar(){
+			i+=5;
+			if(i>=105){
+				clearInterval(showbar);
+			}
+			document.getElementById("bar").style.width=i+"%";
+			document.getElementById("bar").innerHTML=i+"%"; 
+		}
+		startbar();
+
+		function OpenDiv(){
+			document.getElementById("div1").style.display="block";
+			document.getElementById("open").style.display="none";
+		}
+			
+			function CloseDiv(){
+			document.getElementById("div1").style.display="none";
+			document.getElementById("open").style.display="block";
+		}
+	</script>
+</head>
+<body style="background-size: 1200px; margin-top: 0px; overflow: auto;" background="images/"  >
+
+<div>
+	<div class="logo">
+		<img src="images/logo.png">
+	</div>
+	<div class="logoleft">
+		<input type="text" name="serch">
+		<input style="background-color: #F5DEB3; color: #4D4D4D;" type="button" name="serch" value="搜索">
+	</div>
+	<div class="daohang">
+		<ul id="title" style="margin-bottom: 0px;">
+			<li style="margin-left: 160px;"><a href="file:///E:/WEB开发一/basketball-web/content.html">首页</a></li>
+			<li><a href="file:///E:/WEB%E5%BC%80%E5%8F%91%E4%B8%80/basketball-web/list.html">新闻</a></li>
+			<li><a href="#">发展历史</a>
+				
+			</li>
+			<li><a href="#">知名联赛</a></li>
+			<li><a href="#">国际规则</a></li>
+			<li><a href="#">战术板</a></li>
+			<li><a href="#">比赛回顾</a></li>
+			<li><a href="#">视频直播</a></li>
+			<li><a href="#">运动装备</a></li>
+			<li><a href="#">相关链接</a></li>
+		</ul>			
+	</div>
+</div>
+<form>
+	<table>
+		<tr>
+			<td>用户名：</td>
+			<td><input type="text" id="username" name="username" /><span id="errorTip"></span></td>
+		</tr>
+		<tr>
+			<td>密码：</td>
+			<td><input type="password" id="passwd"</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input style="background-color: #F5DEB3; color: #4D4D4D;" type="reset" id="reset" value="重设" />
+			<input style="background-color: #F5DEB3; color: #4D4D4D;" id="submit" type="submit" value="登录" /></td>
+		</tr>
+	</table>
+</form>
+<div class="mianbaoxie">
+	<a href="file:///E:/WEB开发一/basketball-web/content.html">首页</a>
+	<a href="#" class="mianbaoxie1" style="padding-top: 0px;padding-bottom: 0px;">>新闻</a>
+	<a href="file:///E:/WEB%E5%BC%80%E5%8F%91%E4%B8%80/basketball-web/list.html" class="mianbaoxie1" style="padding-top: 0px;padding-bottom: 0px;">>NBA</a>
+</div>	
+
+<div class="left">
+	<div class="ltitle">
+		<h2>篮球教学</h2>
+	</div>
+	<div class="ltext">
+		<ol>
+			<li><a href="#">加农贝克-后卫运球练习</a></li>
+			<li><a href="#">五号位中锋单打技巧</a></li>
+			<li><a href="#">如何成为一个好的篮板手</a></li>
+			<li><a href="#">对抗如何防止受伤-干货</a></li>
+			<li><a href="#">大前锋的得分机会选择</a></li>
+		</ol>
+	</div>
+
+	<div class="ltitle">
+		<h2>国际规则</h2>
+	</div>
+	<div class="ltext">
+		<ol>
+			<li><a href="#">裁判执裁站位选择</a></li>
+			<li><a href="#">犯规吹罚手势基础</a></li>
+			<li><a href="#">NBA与国际比赛的规则差异</a></li>
+			<li><a href="#">近三年国际规则变化</a></li>
+			<li><a href="#">争议球讨论专区</a></li>
+		</ol>
+	</div>
+
+	<div class="ltitle">
+		<h2>知名联赛</h2>
+	</div>
+	<div class="ltext">
+		<ol>
+			<li><a href="#">CBA的“老马”时刻</a></li>
+			<li><a href="#">FIFA逐鹿，谁是霸王</a></li>
+			<li><a href="#">浅谈欧-美的篮球差异</a></li>
+			<li><a href="#">欧锦赛精彩锦集</a></li>
+			<li><a href="#">姚明执掌篮协迎机遇</a></li>
+		</ol>
+	</div>
+
+	<div id="loadbar">
+		<span id="bar" style="width:190px height:40px"></span>
+	</div>
+
+	<button type="button" id="open" style="background-color: #F5DEB3; color: #4D4D4D;" onclick="OpenDiv();">合作站点</button>
+
+	<div id="div1">
+		<p>这是弹出层</p>
+		<button type="button" onclick="CloseDiv()">关闭</button>
+	</div>
+</div>
+
+<div class="right">
+	<div class="rtext">
+	<a href="#"><img src="images/new1.png" style="width: 220px; height: 190px;"></a>
+	</div>
+	<div class="text">
+	<h3><a href="#">美媒热议詹皇或再弃骑士&nbsp;&nbsp;&nbsp;杜兰特几乎锁定FMVP</a></h3>
+	<p style="margin-bottom: 100px;">总决赛第三场，勇士客场逆转拿到系列赛赛点。当凯文-杜兰特在最后时刻接管比赛连拿7分带...2017-6-8</p>
+	</div>
+
+	<div class="rtext">
+	<a href="#"><img src="images/new2.png" style="width: 220px; height: 190px;"></a>
+	</div>
+	<div class="text">
+	<h3><a href="#">G4盘口解析：勇士望大胜横扫骑士 赛季终结战？</a></h3>
+	<p style="margin-bottom: 100px;">勇士在总决赛连下三城，3-0领先骑士，系列赛悬念已荡然无存。人们所关心的问题变成了勇士是否能在G4继续赢球，从而横扫骑士，成为史上首支以16胜0负完美战绩夺冠...2017-6-8</p>
+	</div>
+
+	<div class="rtext">
+	<a href="#"><img src="images/new3.png" style="width: 220px; height: 190px;"></a>
+	</div>
+	<div class="text">
+	<h3><a href="#">面具人：04活塞能干掉勇士 我们能从一防到五</a></h3>
+	<p style="margin-bottom: 100px;"> 尽管勇士在季后赛中拿到了梦幻的15连胜，但仍然有不少前辈表示不服，在接受CBS体育采访时，“面具人”汉密尔顿就表示，04年的活塞能够在系列赛...2017-6-8</p>
+	</div>
+
+	<div class="rtext">
+	<a href="#"><img src="images/new4.png" style="width: 220px; height: 190px;"></a>
+	</div>
+	<div class="text">
+	<h3><a href="#">去年西决杜少为何如此萎靡 格林G3露迷之笑容</a></h3>
+	<p style="margin-bottom: 100px;">NBA总决赛第三场，骑士和勇士激战到了最后时刻，很多人都感慨，这才是总决赛应该有的样子。但遗憾的是，真正的总决赛才刚刚开始，马上可能就会...2017-6-8</p>
+	</div>
+
+	<div class="rtext">
+	<a href="#"><img src="images/new5.png" style="width: 220px; height: 190px;"></a>
+	</div>
+	<div class="text">
+	<h3><a href="#">她或是北大最懂球女生 用科比经历写高考作文</a></h3>
+	<p style="margin-bottom: 100px;">第一次接触篮球完全是机缘巧合。小学放学很早，家长还没下班无法接我，所以就想着给我报一个兴趣班，却只有篮球班在时间上最合适。当时我有一个特别珍爱的5号真皮...2017-6-8</p>
+	</div>
+	<div style="text-align: center;background-image: url(images/11.png);">
+		<p>
+			<a href="#"><font color="#8B4513">1</font></a> &nbsp;
+			<a href="#"><font color="#8B4513">2</font></a> &nbsp;
+			<a href="#"><font color="#8B4513">3</font></a> &nbsp;
+			......&nbsp;
+			<a href="#"><font color="#8B4513">7</font></a> &nbsp;
+			<a href="#"><font color="#8B4513">8</font></a> &nbsp;
+		</p>
+	</div>
+</div>
+
+<div class="foot">	
+	<p style="color:white; text-align:center;">Copyrigth @2013-2014 Hebzhangsijia.com,All Rights Reserved<br>冀ICP备05067795 冀公网安备110402440008号</p>
+</div>
+
+</body>
+</html>
